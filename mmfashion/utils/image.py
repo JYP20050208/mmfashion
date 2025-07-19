@@ -28,7 +28,7 @@ def get_img_tensor(img_path, use_cuda, get_size=False):
     if use_cuda:
         img_tensor = img_tensor.cuda()
     if get_size:
-        return img_tensor, original_hgit add ., original_w
+        return img_tensor, original_h, original_w
     else:
         return img_tensor
 
